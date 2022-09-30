@@ -1,0 +1,5 @@
+selenium
+wedriver_manager
+pandas
+sqlalchemy
+pyscopg2-binary
