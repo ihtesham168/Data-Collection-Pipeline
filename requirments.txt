@@ -1,5 +1,5 @@
 selenium
-webdriver_manager
+wedriver_manager
 pandas
 sqlalchemy
-psycopg2-binary
+pyscopg2-binary
