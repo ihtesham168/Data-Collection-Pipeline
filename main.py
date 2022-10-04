@@ -26,10 +26,6 @@ if __name__ == '__main__':
 
     print('comnnecting to the database')
     my_db =create_engine(f'postgresql+psycopg2://postgres:{Rds_Password}@{Rds_Host}:{Rds_Port}/myprotein-scrapper')
-<<<<<<< HEAD
     print('Connected Successfully')
     myprotein_info.to_sql('myprotein_info', my_db, if_exists='replace', index=False)
     print('Done')
-=======
-    myprotein_info.to_sql('myprotein_info', my_db, if_exists='replace', index=False)
->>>>>>> parent of 23a2edab (In this project we will scrap the protein data from website called Myprotein by using python and selenium)
