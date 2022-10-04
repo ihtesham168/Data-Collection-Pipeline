@@ -28,3 +28,4 @@ if __name__ == '__main__':
     my_db =create_engine(f'postgresql+psycopg2://postgres:{Rds_Password}@{Rds_Host}:{Rds_Port}/myprotein-scrapper')
     print('Connected Successfully')
     myprotein_info.to_sql('myprotein_info', my_db, if_exists='replace', index=False)
+    print('Done')
