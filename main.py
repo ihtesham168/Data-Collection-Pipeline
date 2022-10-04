@@ -5,7 +5,7 @@ import json
 
 if __name__ == '__main__':
     print("Retreiving credentials")
-    with open('database_credentials.json') as cred:
+    with open('db_credentials.json') as cred:
         database_cred = json.load(cred)
 
     Rds_Host = database_cred['RDS_HOST']
@@ -26,4 +26,5 @@ if __name__ == '__main__':
 
     print('comnnecting to the database')
     my_db =create_engine(f'postgresql+psycopg2://postgres:{Rds_Password}@{Rds_Host}:{Rds_Port}/myprotein-scrapper')
+    print('Connected Successfully')
     myprotein_info.to_sql('myprotein_info', my_db, if_exists='replace', index=False)

@@ -126,7 +126,7 @@ class Protein():
                 dict_proteins['Key Benefits'] = key_benefits 
                 self.sleep_time
             except Exception as e:
-                print(e)
+                
                 dict_proteins['Key Benefits'].append('null')                                    
             info_list.append(dict_proteins)
         df_data = pd.DataFrame(info_list)
