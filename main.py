@@ -29,5 +29,5 @@ if __name__ == '__main__':
     print('Connected Successfully')
     myprotein_info.to_sql('myprotein_info', my_db, if_exists='replace', index=False)
     print('Done')
-    print('Have a good day')
+    
     
